@@ -2,7 +2,7 @@
   "selecoes": [
     {
       "id": 1,
-      "name": "Brasil",
+      "nome": "Brasil",
       "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png",
       "grupo": "G",
       "conquistas": [
@@ -24,31 +24,35 @@
         },
         {
           "ano": 2002,
-          "pais": "Coreia do Sul"
-        } 
-
-  ],
+          "pais": "Coreia do Sul/Japão"
+        }
+      ],
       "jogadores": [
         {
           "id": 1,
-          "name": "Pelé",
+          "nome": "Neymar",
+          "camisa": 10,
           "posicao": "Atacante",
-          "gols": 77
+          "titular": true,
+          "gols": 79
         },
         {
           "id": 2,
-          "name": "Ronaldo",
-          "posicao": "Atacante",
-          "gols": 62
+          "nome": "Alisson",
+          "camisa": 1,
+          "posicao": "Goleiro",
+          "titular": true,
+          "gols": 0
         },
         {
           "id": 3,
-          "name": "Zico",
-          "posicao": "Meio-campo",
-          "gols": 48
+          "nome": "Casemiro",
+          "camisa": 5,
+          "posicao": "Volante",
+          "titular": true,
+          "gols": 12
         }
       ]
     }
   ]
-
 }
