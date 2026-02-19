@@ -5,7 +5,29 @@
       "name": "Brasil",
       "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png",
       "grupo": "G",
-      "conquistas": 5,
+      "conquistas": [
+        {
+          "ano": 1958,
+          "pais": "Suécia"
+        },
+        {
+          "ano": 1962,
+          "pais": "Chile"
+        },
+        {
+          "ano": 1970,
+          "pais": "México"
+        },
+        {
+          "ano": 1994,
+          "pais": "Estados Unidos"
+        },
+        {
+          "ano": 2002,
+          "pais": "Coreia do Sul"
+        } 
+
+  ],
       "jogadores": [
         {
           "id": 1,
