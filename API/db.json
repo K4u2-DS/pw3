@@ -1,0 +1,32 @@
+{
+  "selecoes": [
+    {
+      "id": 1,
+      "name": "Brasil",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png",
+      "grupo": "G",
+      "conquistas": 5,
+      "jogadores": [
+        {
+          "id": 1,
+          "name": "Pelé",
+          "posicao": "Atacante",
+          "gols": 77
+        },
+        {
+          "id": 2,
+          "name": "Ronaldo",
+          "posicao": "Atacante",
+          "gols": 62
+        },
+        {
+          "id": 3,
+          "name": "Zico",
+          "posicao": "Meio-campo",
+          "gols": 48
+        }
+      ]
+    }
+  ]
+
+}
