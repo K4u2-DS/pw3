@@ -1,0 +1,49 @@
+.selecoes-page {
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  font-size: 32px;
+}
+
+.selecoes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.selecao-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background: white;
+  transition: 0.2s;
+}
+
+.selecao-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.selecao-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+.selecao-card h3 {
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.selecao-card span {
+  font-size: 14px;
+  color: #666;
+}
