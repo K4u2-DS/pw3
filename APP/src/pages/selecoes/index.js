@@ -24,10 +24,10 @@ const renderSelecoes = (selecoes) => {
 const load = async () => {
     try {
         const selecoes = await getSelecoes();
+        console.log(selecoes);
         renderSelecoes(selecoes);
     } catch (error) {
         container.innerHTML = "<p>Erro ao carregar seleções</p>";
-        console.error(error);
     }
 };
 
