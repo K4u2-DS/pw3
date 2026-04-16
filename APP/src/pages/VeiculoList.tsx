@@ -1,26 +1,33 @@
-import { useEffect, useState } from "react";
-import { getVeiculos } from "../services/veiculoService";
-import type { Veiculo } from "../types/veiculo";
+import { VeiculoCard } from "../components/VeiculoCard";
+import { useVeiculos } from "../hooks/useVeiculos";
+
+// import { useEffect, useState } from "react";
+// import { getVeiculos } from "../services/veiculoService";
+// import type { Veiculo } from "../types/veiculo";
 
 export function VeiculosList() {
-  const [veiculos, setVeiculos] = useState<Veiculo[]>([]);
+  const { veiculos, loading, error } = useVeiculos();
 
-  useEffect(() => {
-    getVeiculos().then(setVeiculos);
-  }, []);
+  // const [veiculos, setVeiculos] = useState<Veiculo[]>([]);
+  // useEffect(() => {
+  //   getVeiculos().then(setVeiculos);
+  // }, []);
+
+  if (loading) {
+    return <p>Carregando veículos...</p>;
+  }
+
+  if (error) {
+    return <p>{error}</p>;
+  }
 
   return (
     <div>
       <h1>Lista de Veículos</h1>
 
-      {veiculos.map((veiculo) => (
-        <div key={veiculo.id}>
-          <h2>{veiculo.modelo}</h2>
-          <p>{veiculo.descricao}</p>
-          <strong>R$ {veiculo.valor}</strong>
-        </div>
+      {veiculos.map((v) => (
+        <VeiculoCard key={v.id} veiculo={v} />
       ))}
     </div>
   );
 }
-
