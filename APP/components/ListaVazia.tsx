@@ -1,12 +1,16 @@
-
-interface Props {
-  mensagem: string;
-}
-
-export function ListaVazia({ mensagem }: Props) {
+export function ListaVazia() {
   return (
-    <div style ={{ border: "1px solid #ccc", padding: "16px", marginBottom: "16px" }}>      
-      <p>{mensagem}</p>
+    <div
+      style={{
+        textAlign: "center",
+        padding: "40px",
+        border: "1px dashed #ccc",
+        borderRadius: "10px",
+        marginTop: "20px",
+      }}
+    >
+      <h2>Nenhum veículo encontrado 🚗</h2>
+      <p>Tente novamente mais tarde.</p>
     </div>
   );
 }
