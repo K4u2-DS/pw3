@@ -24,17 +24,18 @@ export function VeiculosList() {
 
   if (loading) return <h2>Carregando...</h2>;
 
-  if (!veiculos || veiculos.length === 0) {
-    return <ListaVazia />;
-  }
+
 
   return (
     <div>
       <h1>Lista de Veículos</h1>
 
-      {veiculos.map((v) => (
-        <VeiculoCard key={v.id} veiculo={v} />
-      ))}
+      {
+        veiculos.length > 0 ?
+        veiculos.map((v) => (
+          <VeiculoCard key={v.id} veiculo={v} />
+        )) :
+      <ListaVazia />}
     </div>
   );
 }
